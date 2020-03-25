@@ -38,4 +38,10 @@ form {
   text-align: center;
   width: 100%;
 }
+
+.error {
+  float: left;
+  size: 5px;
+  color: red;
+}
 /* ========================WRITE YOUR CSS FROM HERE======================== */

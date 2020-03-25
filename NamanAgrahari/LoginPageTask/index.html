@@ -1,0 +1,66 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="main.js"></script>
+</head>
+<body>
+  <img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+  <!-- Beautify This -->
+  <div class="log-form">
+    <h2>Enter your details</h2>
+    <form onsubmit="return submit()" method="post">
+      <div class="row form-group">
+        <div class="col-sm-12">
+          <input type="text" title="username" placeholder="Username" class="form-control" required/>
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col-sm-12">
+          <input type="email" title="email" placeholder="Email" class="form-control" required>
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col-sm-12">
+          <input type="number" title="phone" placeholder="Phone Number (10 digit)" class="form-control" onkeyup="return checkPhone(this.value)" required>
+          <small class="error" id="phoneerror"></small>
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col-sm-6 form-group">
+          <input type="password" title="password" id="password" placeholder="Password" class="form-control" required onkeyup="return checkPassword()" />
+          <small class="error" id="passworderror"></small>
+        </div>
+        <div class="col-sm-6">
+          <input type="password" title="cnfpassword" id="cnfpassword" placeholder="Confirm Password" class="form-control" onkeyup="return confPass()" required/>
+          <small class="error" id="cnfpasserror"></small>
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col-sm-12">
+          <textarea name="message" id="message" cols="35" rows="4" placeholder="Enter Message..." class="form-control" required></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <p>Age</p>
+        <div class="form-check">
+          <input type="radio" id="above" name="age" value="above" class="form-check-input" required>
+          <label for="above">Above 18</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" id="below" name="age" value="below" class="form-check-input" required>
+          <label for="below">Below 18</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+    </form>
+  </div>
+  <!-- Beautify Ends -->
+</body>
+</html>
